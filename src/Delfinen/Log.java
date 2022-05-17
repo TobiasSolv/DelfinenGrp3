@@ -15,7 +15,6 @@ public class Log {
 
     public void calcPayment() {
 
-
     }
 
     public void saveMembers() throws FileNotFoundException {
@@ -23,10 +22,8 @@ public class Log {
         PrintStream ps = new PrintStream("Memberfile.txt");
         for (Member member : memberList) {
             ps.println(member);
-
         }
     }
-
 
     public ArrayList<Member> loadMembers() throws FileNotFoundException {
         ArrayList<Member>member = new ArrayList<>();
@@ -40,14 +37,7 @@ public class Log {
             memberList.add(new Member(name, age));
         }
         return memberList;
-
-
-
         }
-
-
-
-
 
     public void topFive() {
 
@@ -62,10 +52,10 @@ public class Log {
             name = in.nextLine();
             if (!name.isBlank()) {
                 memberList.add(new Member(name, age));
-
             }
         }
     }
+
     public void removeMember(){
         ui.ageText();
         Scanner in = new Scanner(System.in);
@@ -75,7 +65,6 @@ public class Log {
             name = in.nextLine();
             if (!name.isBlank()) {
                // memberList.remove(); skal laves om til id list. !!
-
             }
         }
     }
@@ -92,6 +81,4 @@ public class Log {
         }
         System.out.println(isAre + " " + memberList.size() + s);
     }
-
-
 }

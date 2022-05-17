@@ -34,7 +34,6 @@ public class Member {
         this.age=age;
     }
 
-
     public int getAge() {
         return age;
     }
@@ -74,6 +73,7 @@ public class Member {
     public int getDateOfBirth() {
         return dateOfBirth;
     }
+
     public int getId(){return id;}
 
 }
